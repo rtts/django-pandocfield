@@ -8,7 +8,7 @@ Despite some excellent libraries ([django-pagedown](https://github.com/timmyomah
 
 ### Pandoc
 
-[Pandoc](http://pandoc.org/) is the world's best markdown converter: It is fast due to natively compiled code and it supports all possible extensions to Markdown syntax, including the typesetting of formulas using either [MathML](https://www.w3.org/TR/MathML3/), [MathJax](https://www.mathjax.org/), or [KaTeX](https://khan.github.io/KaTeX/) (among others). It is written in [Haskell](https://www.haskell.org/), the programming language of the gods, and is [easily extendable with Python code](http://pandoc.org/scripting.html). As the name implies, django-pandoc-field uses Pandoc in the background to convert user-supplied Markdown to HTML for displaying on web pages.
+[Pandoc](http://pandoc.org/) is the world's best markdown converter: It is fast due to natively compiled code and it supports all possible extensions to Markdown syntax, including the typesetting of formulas using either [MathML](https://www.w3.org/TR/MathML3/), [MathJax](https://www.mathjax.org/), or [KaTeX](https://khan.github.io/KaTeX/) (among others). It is written in [Haskell](https://www.haskell.org/), the programming language of the gods, and is [easily extendable with Python code](http://pandoc.org/scripting.html). As the name implies, `django-pandocfield` uses Pandoc in the background to convert user-supplied Markdown to HTML for displaying on web pages.
 
 To install Pandoc on Debian-derived systems, use the [Apt package manager](https://debian-handbook.info/browse/stable/sect.apt-get.html):
 
@@ -18,6 +18,9 @@ For other systems, refer to [Pandoc's installation instructions](http://pandoc.o
 
 ## Installation
 
+Django Pandoc Field is not (yet!) installable via package managers such as `apt` or `pip`. Simply clone this repository and run `python setup.py install`. You can also copy the `pandocfield` directory into your own Django project.
+
+## Configuration
 First, add `pandocfield` to your `INSTALLED_APPS` (in `setup.py`):
 
     INSTALLED_APPS += ['pandocfield']

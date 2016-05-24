@@ -3,6 +3,7 @@ import inspect
 from django.db import models
 from django.utils.safestring import mark_safe
 from django.utils.encoding import python_2_unicode_compatible
+from . import widgets
 
 def _html_field_name(original_field_name):
     return '_{}_html'.format(original_field_name)
@@ -97,9 +98,20 @@ class PandocField(models.TextField):
         else:
             return super(PandocField, self).to_python(value)
 
+    def formfield(self, **kwargs):
+        defaults = {'widget': widgets.PandocEditor}
+        defaults.update(kwargs)
+        return super(PandocField, self).formfield(**defaults)
+
     # def value_to_string(self, obj):
     #     value = self.value_from_object(obj)
     #     raise ValueError(type(value))
     #     if hasattr(value, 'raw'):
     #         return value.raw
     #     return value
+
+# Use the PandocEditorWidget in the Admin
+from django.contrib.admin.options import FORMFIELD_FOR_DBFIELD_DEFAULTS
+FORMFIELD_FOR_DBFIELD_DEFAULTS[PandocField] = {
+    'widget': widgets.PandocEditor,
+}

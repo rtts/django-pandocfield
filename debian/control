@@ -1,0 +1,15 @@
+Source: python3-django-pandocfield
+Section: web
+Priority: extra
+Maintainer: Jaap Joris Vens <jj@rtts.eu>
+Build-Depends: debhelper (>= 7), python3, dh-python, python3-setuptools
+Standards-Version: 3.9.7
+
+Package: python3-django-pandocfield
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Recommends: python3-django
+Description: Advanced Markdown field for Django that supports LaTeX formulas
+ This Django app provides PandocField(), a model field that
+ automatically converts Pandoc’s Markdown to HTML. It also includes a
+ custom widget and admin integration.

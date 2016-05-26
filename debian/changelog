@@ -1,0 +1,5 @@
+python3-django-pandocfield (0.1) stable; urgency=medium
+
+  * Initial release.
+
+ -- Jaap Joris Vens <jj@rtts.eu>  Thu, 26 May 2016 15:06:26 +0200

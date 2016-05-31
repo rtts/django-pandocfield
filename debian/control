@@ -7,7 +7,7 @@ Standards-Version: 3.9.7
 
 Package: python3-django-pandocfield
 Architecture: all
-Depends: ${python3:Depends}, ${misc:Depends}
+Depends: ${python3:Depends}, ${misc:Depends}, python3-bleach
 Recommends: python3-django
 Description: Advanced Markdown field for Django that supports LaTeX formulas
  This Django app provides PandocField(), a model field that

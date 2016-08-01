@@ -13,5 +13,6 @@ setup(
     include_package_data = True,
     install_requires = [
         'django >= 1.7.7, <= 1.9.4',
+        'bleach == 1.4.3',
     ],
 )

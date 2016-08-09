@@ -13,7 +13,7 @@ class PandocEditor(forms.widgets.Textarea):
             value = ''
         elif hasattr(value, 'raw'):
             value = value.raw
-        attrs['style'] = 'font-family: monospace; line-height: 1.5; height: 25em; width: calc(100% - 190px) !important'
+        attrs['style'] = 'height: 15em; width: 690px'
         final_attrs = self.build_attrs(attrs, name=name)
         template = loader.get_template('pandocfield/widget.html')
         return template.render({

@@ -1,3 +1,10 @@
+python3-django-pandocfield (0.2.1) stable; urgency=medium
+
+  * Bugfix to prevent log spamming
+  * CSS tweak of editor widget
+
+ -- Jaap Joris Vens <jj@rtts.eu>  Tue, 09 Aug 2016 11:45:27 +0200
+
 python3-django-pandocfield (0.2) stable; urgency=medium
 
   * Improved the looks of the editor widget

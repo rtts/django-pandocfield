@@ -15,7 +15,6 @@ class PandocEditor(forms.widgets.Textarea):
             value = value.raw
         attrs['style'] = 'font-family: monospace; line-height: 1.5; height: 25em; width: calc(100% - 190px) !important'
         final_attrs = self.build_attrs(attrs, name=name)
-        print(final_attrs)
         template = loader.get_template('pandocfield/widget.html')
         return template.render({
             'attrs': flatatt(final_attrs),

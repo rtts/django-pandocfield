@@ -38,8 +38,12 @@ class PandocField(models.TextField):
     """An advanced Markdown field that supports LaTeX formulas
 
     """
-    def __init__(self, *args, auto_create_html_field=True, **kwargs):
-        self.auto_create_html_field = auto_create_html_field
+    def __init__(self, *args, **kwargs):
+        if 'auto_create_html_field' in kwargs:
+            self.auto_create_html_field = kwargs['auto_create_html_field']
+            del kwargs['auto_create_html_field']
+        else:
+            self.auto_create_html_field = True
         super(PandocField, self).__init__(*args, **kwargs)
 
     def __get__(self, obj, cls):

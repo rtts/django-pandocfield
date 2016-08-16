@@ -1,3 +1,10 @@
+python3-django-pandocfield (0.2.2) stable; urgency=medium
+
+  * Fixed Python2 incompatibility
+  * Fixed Django 1.7 incompatibility
+
+ -- Jaap Joris Vens <jj@rtts.eu>  Tue, 16 Aug 2016 14:18:04 +0200
+
 python3-django-pandocfield (0.2.1) stable; urgency=medium
 
   * Bugfix to prevent log spamming

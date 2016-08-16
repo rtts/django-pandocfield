@@ -1,5 +1,5 @@
 from django import forms
-from django.template import loader
+from django.template import Context, loader
 from django.forms.utils import flatatt
 from django.utils.html import format_html
 from django.utils.encoding import force_text
@@ -16,7 +16,7 @@ class PandocEditor(forms.widgets.Textarea):
         attrs['style'] = 'height: 15em; width: 690px'
         final_attrs = self.build_attrs(attrs, name=name)
         template = loader.get_template('pandocfield/widget.html')
-        return template.render({
+        return template.render(Context({
             'attrs': flatatt(final_attrs),
             'value': force_text(value),
-        })
+        }))

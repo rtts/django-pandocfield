@@ -1,3 +1,9 @@
+python3-django-pandocfield (0.2.3) stable; urgency=medium
+
+  * Included missing MANIFEST.in
+
+ -- Jaap Joris Vens <jj@rtts.eu>  Tue, 16 Aug 2016 16:20:41 +0200
+
 python3-django-pandocfield (0.2.2) stable; urgency=medium
 
   * Fixed Python2 incompatibility

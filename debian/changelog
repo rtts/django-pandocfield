@@ -1,3 +1,9 @@
+python3-django-pandocfield (0.2.4) UNRELEASED; urgency=medium
+
+  * Whitelisted the <iframe> tag so Youtube videos can be embedded
+
+ -- Jaap Joris Vens <jj@rtts.eu>  Wed, 07 Sep 2016 14:08:26 +0200
+
 python3-django-pandocfield (0.2.3) stable; urgency=medium
 
   * Included missing MANIFEST.in

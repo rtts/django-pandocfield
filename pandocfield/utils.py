@@ -6,6 +6,9 @@ ATTRIBUTES = {
     'a': ['href', 'rel', 'download'],
     'img': ['src', 'alt'],
     'table': ['border'],
+
+    # These attributes are useful for embedded Youtube video's
+    'iframe': ['width', 'height', 'src', 'frameborder', 'allowfullscreen'],
 }
 
 TAGS = [
@@ -66,7 +69,7 @@ TAGS = [
     'hr',
     'html',
     'i',
-#    'iframe',
+    'iframe',
     'img',
     'input',
     'ins',

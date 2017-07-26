@@ -29,7 +29,7 @@ Second, add `pandocfield.PandocField()` to your desired model (in `models.py`):
 
     from django import models
     from pandocfield import PandocField
-    
+
     class ScientificArticle(models.Model):
         content = PandocField()
 
@@ -37,3 +37,7 @@ Third, create and run the database migrations:
 
     $ ./manage.py makemigrations
     $ ./manage.py migrate
+
+Finally, make sure to include the [MathJax javascript library](https://github.com/mathjax/MathJax) on each page that displays the contents of a PandocField:
+
+    <script src="{% static 'mathjax/MathJax.js' %}?config=TeX-AMS-MML_HTMLorMML"></script>

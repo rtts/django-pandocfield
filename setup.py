@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'django-pandocfield',
-    version = '0.2.4',
+    version = '0.2.5',
     url = 'https://github.com/JaapJoris/django-pandocfield',
     author = 'Jaap Joris Vens',
     author_email = 'jj@rtts.eu',
@@ -12,7 +12,7 @@ setup(
     packages = find_packages(),
     include_package_data = True,
     install_requires = [
-        'django >= 1.7.7, <= 1.9.4',
-        'bleach == 1.4.3',
+        'django',
+        'bleach',
     ],
 )

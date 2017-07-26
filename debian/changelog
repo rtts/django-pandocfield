@@ -1,3 +1,9 @@
+python3-django-pandocfield (0.2.5) stable; urgency=medium
+
+  * Removed the reference to MathJax obsoleted CDN
+
+ -- Jaap Joris Vens <jj@rtts.eu>  Wed, 26 Jul 2017 11:34:35 +0200
+
 python3-django-pandocfield (0.2.4) stable; urgency=medium
 
   * Whitelisted the <iframe> tag so Youtube videos can be embedded
